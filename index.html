@@ -13,13 +13,57 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="landing">
+    <div class="landing" id="landing">
       <div class="logo px" data-speed="0.75">
         <img src="./assets/img/logo.png" alt="off the grid logo" />
       </div>
+      <div class="down-arrow">
+        <a href="#boards">
+          <img src="./assets/img/arrow.png" alt="" />
+        </a>
+      </div>
     </div>
 
-    <div class="nav">
+    <div class="boards" id="boards">
+      <div class="page-logo px" data-speed="0.75">
+        <a href="#landing">
+          <h2>
+            off <br />
+            the <br />
+            grid
+          </h2>
+        </a>
+      </div>
+      <div class="up-arrow">
+        <a href="#landing">
+          <img src="./assets/img/arrow.png" alt="" />
+        </a>
+      </div>
+      <div class="down-arrow">
+        <a href="#">
+          <img src="./assets/img/arrow.png" alt="" />
+        </a>
+      </div>
+      <div class="left-arrow">
+        <a href="#nav">
+          <p>works</p>
+        </a>
+      </div>
+      <div class="right-arrow">
+        <a href="#">
+          <p>about</p>
+        </a>
+      </div>
+
+      <div class="main">
+        <div class="head"><h1 class="px" data-speed="2">boards</h1></div>
+        <div class="img">
+          <img src="./assets/img/boards.png" alt="" class="px" data-speed="1" />
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="nav">
       <div class="page-logo px" data-speed="0.75">
         <h2>
           off <br />
@@ -48,21 +92,6 @@
       </div>
     </div>
 
-    <script type="text/javascript">
-      document.addEventListener("mousemove", parallax);
-      function parallax(e) {
-        this.querySelectorAll(".px").forEach((layer) => {
-          const speed = layer.getAttribute("data-speed");
-
-          const x = (window.innerWidth - e.pageX * speed) / -100;
-          const y = (window.innerWidth - e.pageY * speed) / -100;
-
-          console.log(x);
-          console.log(y);
-
-          layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        });
-      }
-    </script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
