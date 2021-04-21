@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+.landing {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #000000;
+}
+.logo {
+  position: absolute;
+  color: #ffffff;
+  padding: 15px;
+  height: 20vh;
+  width: 10vw;
+  background: burlywood;
+  top: 50px;
+  right: 50px;
+}
+
+.nav {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #f7f8f9;
+}
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-logo {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+}
+.page-logo h2 {
+  text-decoration: none;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.list ul {
+  list-style: none;
+  text-align: center;
+}
+.list-item {
+  margin-bottom: 5px;
+}
+.list-item a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.list-item a:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  transition: linear 0.1s ease-in-out;
+}
