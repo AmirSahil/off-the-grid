@@ -14,13 +14,13 @@
   </head>
   <body>
     <div class="landing">
-      <div class="logo">
-        <h1>Off The Grid</h1>
+      <div class="logo px" data-speed="0.75">
+        <img src="./assets/img/logo.png" alt="off the grid logo" />
       </div>
     </div>
 
     <div class="nav">
-      <div class="page-logo">
+      <div class="page-logo px" data-speed="0.75">
         <h2>
           off <br />
           the <br />
@@ -29,23 +29,40 @@
       </div>
       <div class="list">
         <ul>
-          <li class="list-item">
+          <li class="list-item px" data-speed="0.75">
             <a href="#boards">boards</a>
           </li>
-          <li class="list-item">
+          <li class="list-item px" data-speed="0.75">
             <a href="#accessories">accessories</a>
           </li>
-          <li class="list-item">
+          <li class="list-item px" data-speed="0.75">
             <a href="#apparel">apparel</a>
           </li>
-          <li class="list-item">
+          <li class="list-item px" data-speed="0.75">
             <a href="#graphics">graphics</a>
           </li>
-          <li class="list-item">
+          <li class="list-item px" data-speed="0.75">
             <a href="#stories">stories</a>
           </li>
         </ul>
       </div>
     </div>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        this.querySelectorAll(".px").forEach((layer) => {
+          const speed = layer.getAttribute("data-speed");
+
+          const x = (window.innerWidth - e.pageX * speed) / -100;
+          const y = (window.innerWidth - e.pageY * speed) / -100;
+
+          console.log(x);
+          console.log(y);
+
+          layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+      }
+    </script>
   </body>
 </html>
