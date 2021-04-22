@@ -25,37 +25,53 @@ body {
 .logo img {
   width: 400px;
 }
-.up-arrow img {
+.arrow svg {
+  height: 6.5rem;
+}
+.up-arrow svg {
   position: absolute;
   top: 30px;
   left: 50%;
   transform: translate(-50%, 0%);
 }
-.down-arrow img {
+.down-arrow svg {
   position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translate(-50%, 0%) rotate(180deg);
 }
-.right-arrow p {
+.right-nav p {
   position: absolute;
   top: 50%;
   right: 20px;
-  color: #d99f33;
   font-size: 48px;
   font-weight: 300;
   text-transform: capitalize;
   transform: translate(0%, -50%) rotate(90deg);
 }
-.left-arrow p {
+.left-nav p {
   position: absolute;
   top: 50%;
   left: 20px;
-  color: #d99f33;
   font-size: 48px;
   font-weight: 300;
   text-transform: capitalize;
   transform: translate(0%, -50%) rotate(-90deg);
+}
+.right-nav p:hover,
+.left-nav p:hover {
+  text-decoration: underline;
+}
+
+/* boards
+boards
+boards */
+
+.arrow-boards {
+  fill: #d99f33;
+}
+.arrow-boards p {
+  color: #d99f33;
 }
 .boards {
   position: relative;
@@ -74,14 +90,14 @@ body {
   width: 50vw;
   height: 80vh;
 }
-.head {
+.head-boards {
   position: absolute;
-  top: 15%;
-  left: 30%;
+  top: 20%;
+  left: 35%;
   transform: translate(-30%, -15%);
   z-index: 2;
 }
-.head h1 {
+.head-boards h1 {
   font-size: 7.2em;
   color: #143725;
   text-transform: uppercase;
@@ -97,6 +113,153 @@ body {
   width: 20vw;
   box-shadow: 10px 10px 10px rgb(100, 100, 100);
 }
+
+/* accessories
+accessories
+accessories */
+
+.arrow-acc {
+  fill: #ffffff;
+}
+.arrow-acc p {
+  color: #000000;
+}
+.accessories {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #c4e7fc;
+}
+.accessories .page-logo h2 {
+  color: #000000;
+}
+.head-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.head-center h1 {
+  font-size: 7.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 10px 10px 20px rgb(41, 41, 41);
+}
+
+/* apparel
+apparel
+apparel */
+
+.arrow-app {
+  fill: #ffffff;
+}
+.arrow-app p {
+  color: #ffffff;
+}
+.apparel {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #f2c0c9;
+}
+.apparel .page-logo h2 {
+  color: #ffffff;
+}
+
+/* graphics
+graphics
+graphics */
+
+.arrow-graphics {
+  fill: #ffffff;
+}
+.arrow-graphics p {
+  color: #ffffff;
+}
+.graphics {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #fec606;
+}
+.graphics .page-logo h2 {
+  color: #fe0222;
+}
+.graphics .right-nav p,
+.graphics .left-nav p {
+  color: #fe0222;
+}
+.head-graphics {
+  position: absolute;
+  top: 75%;
+  right: 8%;
+  transform: translate(-8%, -75%);
+  z-index: 2;
+}
+.head-graphics h1 {
+  font-size: 7.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgb(143, 143, 143);
+}
+.img-graphics {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-graphics img {
+  width: 30vw;
+  box-shadow: 10px 10px 10px rgb(100, 100, 100);
+}
+
+/* stories
+stories
+stories */
+
+.arrow-stories {
+  fill: #ffffff;
+}
+.arrow-stories p {
+  color: #ffffff;
+}
+.stories {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #000000;
+}
+.stories .page-logo h2 {
+  color: #000000;
+}
+.head-stories {
+  position: absolute;
+  top: 70%;
+  right: 50%;
+  transform: translate(50%, -70%);
+  z-index: 2;
+}
+.head-stories h1 {
+  font-size: 7.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgb(143, 143, 143);
+}
+.img-stories {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-stories img {
+  width: 30vw;
+  /* box-shadow: 10px 10px 10px rgb(100, 100, 100); */
+}
+
+/* nav
+nav
+nav */
 
 .nav {
   position: relative;
@@ -146,5 +309,15 @@ body {
   transition: linear 0.1s ease-in-out;
 }
 
+@media screen and (max-width: 1280px) {
+  .head h1 {
+    font-size: 6.2em;
+  }
+  .head {
+    top: 15%;
+    left: 30%;
+    transform: translate(-30%, -15%);
+  }
+}
 @media screen and (max-width: 1280px) {
 }
