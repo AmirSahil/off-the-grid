@@ -310,13 +310,26 @@ nav */
 }
 
 @media screen and (max-width: 1280px) {
-  .head h1 {
-    font-size: 6.2em;
+  .arrow svg {
+    height: 4.5rem;
   }
-  .head {
-    top: 15%;
+  .head-boards h1,
+  .head-graphics h1,
+  .head-stories h1 {
+    font-size: 5.2em;
+  }
+  .head-boards {
+    top: 20%;
     left: 30%;
-    transform: translate(-30%, -15%);
+    transform: translate(-30%, -20%);
+  }
+  .head-stories {
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -60%);
+  }
+  .img-stories img {
+    width: 27vw;
   }
 }
 @media screen and (max-width: 1280px) {
