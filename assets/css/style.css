@@ -428,6 +428,9 @@ media ports */
   .logo img {
     width: 10rem;
   }
+  .cursor {
+    display: none;
+  }
   .up-arrow svg {
     top: 86%;
     left: 10vw;
@@ -481,5 +484,14 @@ media ports */
   }
   .list-item a {
     font-size: 2.2rem;
+  }
+  .landing,
+  .boards,
+  .accessories,
+  .apparel,
+  .graphics,
+  .stories,
+  .nav {
+    cursor: pointer;
   }
 }
