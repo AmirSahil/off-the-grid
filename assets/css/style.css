@@ -434,7 +434,7 @@ media ports */
     width: 40vw;
   }
 }
-@media screen and (max-width: 1366px) and (min-width: 1366px) @media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .arrow i {
     font-size: 4.5rem;
   }
