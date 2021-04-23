@@ -471,18 +471,6 @@ media ports */
     right: 0vw;
     transform: translate(0%, -50%) rotate(90deg);
   }
-  .left-nav p {
-    bottom: 5vh;
-    left: 25vw;
-    font-size: 28px;
-    transform: translate(0%, -50%);
-  }
-  .right-nav p {
-    bottom: 5vh;
-    right: 25vw;
-    font-size: 28px;
-    transform: translate(0%, -50%);
-  }
   .page-logo {
     top: 15%;
     left: 50%;
@@ -523,5 +511,33 @@ media ports */
   .stories,
   .nav {
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 414px), screen and (max-height: 667px) {
+  .left-nav p {
+    bottom: 5vh;
+    left: 25vw;
+    font-size: 28px;
+    transform: translate(0%, -50%);
+  }
+  .right-nav p {
+    bottom: 5vh;
+    right: 25vw;
+    font-size: 28px;
+    transform: translate(0%, -50%);
+  }
+}
+@media screen and (max-width: 414px), screen and (min-height: 668px) {
+  .left-nav p {
+    bottom: 4vh;
+    left: 25vw;
+    font-size: 28px;
+    transform: translate(0%, -50%);
+  }
+  .right-nav p {
+    bottom: 4vh;
+    right: 25vw;
+    font-size: 28px;
+    transform: translate(0%, -50%);
   }
 }
