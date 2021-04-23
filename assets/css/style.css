@@ -48,6 +48,24 @@ a {
   bottom: none;
   right: 50vw;
 }
+.right-nav p {
+  position: absolute;
+  top: none;
+  right: none;
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: capitalize;
+  transition: font-size 0.2s ease-in-out;
+}
+.left-nav p {
+  position: absolute;
+  top: none;
+  left: none;
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: capitalize;
+  transition: font-size 0.2s ease-in-out;
+}
 /* flag DO NOT DISTURB */
 @media screen and (min-width: 415px) {
   .up-arrow i {
@@ -62,26 +80,26 @@ a {
     right: 50vw;
     transform: translate(50%, 0%) rotate(180deg);
   }
-}
-.right-nav p {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  font-size: 48px;
-  font-weight: 300;
-  text-transform: capitalize;
-  transform: translate(0%, -50%) rotate(90deg);
-  transition: font-size 0.2s ease-in-out;
-}
-.left-nav p {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  font-size: 48px;
-  font-weight: 300;
-  text-transform: capitalize;
-  transform: translate(0%, -50%) rotate(-90deg);
-  transition: font-size 0.2s ease-in-out;
+  .right-nav p {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: capitalize;
+    transform: translate(0%, -50%) rotate(90deg);
+    transition: font-size 0.2s ease-in-out;
+  }
+  .left-nav p {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: capitalize;
+    transform: translate(0%, -50%) rotate(-90deg);
+    transition: font-size 0.2s ease-in-out;
+  }
 }
 
 .right-nav p:hover,
@@ -446,22 +464,22 @@ media ports */
   .up-arrow i {
     bottom: 0vh;
     left: 0vw;
-    transform: translate(0%, -40%) rotate(-90deg);
+    transform: translate(0%, -50%) rotate(-90deg);
   }
   .down-arrow i {
     bottom: 0vh;
     right: 0vw;
-    transform: translate(0%, -40%) rotate(90deg);
+    transform: translate(0%, -50%) rotate(90deg);
   }
   .left-nav p {
-    top: 90%;
-    left: 90px;
+    bottom: 5vh;
+    left: 25vw;
     font-size: 28px;
     transform: translate(0%, -50%);
   }
   .right-nav p {
-    top: 90%;
-    right: 90px;
+    bottom: 5vh;
+    right: 25vw;
     font-size: 28px;
     transform: translate(0%, -50%);
   }
