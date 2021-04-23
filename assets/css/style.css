@@ -29,24 +29,39 @@ a {
 .logo img {
   width: 13rem;
 }
-.arrow svg {
-  height: 6.5rem;
-  transition: height 0.2s ease-in-out;
+.arrow i {
+  font-size: 7rem;
+  transition: font-size 0.2s ease-in-out;
+  transform-origin: 100%, 100%;
 }
-.arrow svg:hover {
-  height: 8rem;
+.arrow i:hover {
+  font-size: 8.5rem;
 }
-.up-arrow svg {
+/* flag DO NOT DISTURB */
+.up-arrow i {
   position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  bottom: 87vh;
+  left: 50vw;
 }
-.down-arrow svg {
+.down-arrow i {
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 0%) rotate(180deg);
+  bottom: none;
+  right: 50vw;
+}
+/* flag DO NOT DISTURB */
+@media screen and (min-width: 415px) {
+  .up-arrow i {
+    position: absolute;
+    bottom: 87vh;
+    left: 50vw;
+    transform: translate(-50%, 0%);
+  }
+  .down-arrow i {
+    position: absolute;
+    top: 87vh;
+    right: 50vw;
+    transform: translate(50%, 0%) rotate(180deg);
+  }
 }
 .right-nav p {
   position: absolute;
@@ -90,6 +105,8 @@ a {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 2;
+  transition: transform 0.3s ease;
+  transform-origin: 100%, 100%;
 }
 a {
   cursor: none;
@@ -103,11 +120,10 @@ a {
 boards
 boards */
 
-.arrow-boards {
-  fill: #d99f33;
-  -webkit-text-fill-color: #d99f33;
-}
 .arrow-boards p {
+  color: #d99f33;
+}
+.arrow-boards a {
   color: #d99f33;
 }
 .arrow-boards a:visited {
@@ -150,11 +166,10 @@ boards */
 accessories
 accessories */
 
-.arrow-acc {
-  fill: #ffffff;
-  -webkit-text-fill-color: #ffffff;
-}
 .arrow-acc p {
+  color: #ffffff;
+}
+.arrow-acc a {
   color: #ffffff;
 }
 .arrow-acc a:visited {
@@ -187,11 +202,10 @@ accessories */
 apparel
 apparel */
 
-.arrow-app {
-  fill: #ffffff;
-  -webkit-text-fill-color: #ffffff;
-}
 .arrow-app p {
+  color: #ffffff;
+}
+.arrow-app a {
   color: #ffffff;
 }
 .arrow-app a:visited {
@@ -211,14 +225,13 @@ apparel */
 graphics
 graphics */
 
-.arrow-graphics {
-  fill: #ffffff;
-  -webkit-text-fill-color: #ffffff;
-}
 .arrow-graphics p {
+  color: #fe0222;
+}
+.arrow-graphics a {
   color: #ffffff;
 }
-.arrow-gaphics a:visited {
+.arrow-graphics a:visited {
   color: #ffffff;
 }
 .graphics {
@@ -262,11 +275,10 @@ graphics */
 stories
 stories */
 
-.arrow-stories {
-  fill: #ffffff;
-  -webkit-text-fill-color: #ffffff;
-}
 .arrow-stories p {
+  color: #ffffff;
+}
+.arrow-stories a {
   color: #ffffff;
 }
 .arrow-stories a:visited {
@@ -372,8 +384,8 @@ media ports
 media ports */
 
 @media screen and (max-width: 1366px) {
-  .arrow svg {
-    height: 4.5rem;
+  .arrow i {
+    font-size: 4.5rem;
   }
   .head-boards h1,
   .head-graphics h1,
@@ -397,8 +409,8 @@ media ports */
 }
 
 @media screen and (max-width: 1280px) {
-  .arrow svg {
-    height: 4.5rem;
+  .arrow i {
+    font-size: 4.5rem;
   }
   .head-boards h1,
   .head-graphics h1,
@@ -431,15 +443,15 @@ media ports */
   .cursor {
     display: none;
   }
-  .up-arrow svg {
-    top: 86%;
-    left: 10vw;
-    transform: translate(-50%, 0%) rotate(-90deg);
+  .up-arrow i {
+    bottom: 0vh;
+    left: 0vw;
+    transform: translate(0%, -40%) rotate(-90deg);
   }
-  .down-arrow svg {
-    top: 86%;
-    left: 90vw;
-    transform: translate(-50%, 0%) rotate(90deg);
+  .down-arrow i {
+    bottom: 0vh;
+    right: 0vw;
+    transform: translate(0%, -40%) rotate(90deg);
   }
   .left-nav p {
     top: 90%;
