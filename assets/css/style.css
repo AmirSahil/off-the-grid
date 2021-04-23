@@ -425,7 +425,7 @@ media ports */
     width: 30vw;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 850px),
+/* @media screen and (min-width: 750px) and (max-width: 850px),
   screen and (min-height: 1000px) {
   .img img {
     width: 45vw;
@@ -433,8 +433,8 @@ media ports */
   .img-stories img {
     width: 40vw;
   }
-}
-@media screen and (max-width: 1280px) {
+} */
+@media screen and (min-width: 851px) and (max-width: 1280px) {
   .arrow i {
     font-size: 4.5rem;
   }
@@ -447,9 +447,9 @@ media ports */
     top: 20%;
     left: 50%;
   }
-  /* .img-stories img {
+  .img-stories img {
     width: 27vw;
-  } */
+  }
 }
 @media screen and (max-width: 414px) {
   .logo {
