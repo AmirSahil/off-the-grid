@@ -447,9 +447,9 @@ media ports */
     top: 20%;
     left: 50%;
   }
-  .img-stories img {
+  /* .img-stories img {
     width: 27vw;
-  }
+  } */
 }
 @media screen and (max-width: 414px) {
   .logo {
