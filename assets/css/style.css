@@ -31,6 +31,10 @@ a {
 }
 .arrow svg {
   height: 6.5rem;
+  transition: height 0.2s ease-in-out;
+}
+.arrow svg:hover {
+  height: 8rem;
 }
 .up-arrow svg {
   position: absolute;
@@ -52,6 +56,7 @@ a {
   font-weight: 300;
   text-transform: capitalize;
   transform: translate(0%, -50%) rotate(90deg);
+  transition: font-size 0.2s ease-in-out;
 }
 .left-nav p {
   position: absolute;
@@ -61,12 +66,14 @@ a {
   font-weight: 300;
   text-transform: capitalize;
   transform: translate(0%, -50%) rotate(-90deg);
+  transition: font-size 0.2s ease-in-out;
 }
+
 .right-nav p:hover,
 .left-nav p:hover {
   text-decoration: underline;
+  font-size: 56px;
 }
-
 .main {
   position: absolute;
   top: 50%;
@@ -75,12 +82,29 @@ a {
   width: 50vw;
   height: 80vh;
 }
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+}
+a {
+  cursor: none;
+}
+.link-grow {
+  transform: scale(0.5);
+  cursor: none;
+}
 
 /* boards
 boards
 boards */
 
 .arrow-boards {
+  fill: #d99f33;
   -webkit-text-fill-color: #d99f33;
 }
 .arrow-boards p {
@@ -127,13 +151,14 @@ accessories
 accessories */
 
 .arrow-acc {
+  fill: #ffffff;
   -webkit-text-fill-color: #ffffff;
 }
 .arrow-acc p {
-  color: #000000;
+  color: #ffffff;
 }
 .arrow-acc a:visited {
-  color: #000000;
+  color: #ffffff;
 }
 .accessories {
   position: relative;
@@ -142,7 +167,7 @@ accessories */
   background: #c4e7fc;
 }
 .accessories .page-logo h2 {
-  color: #000000;
+  color: #ffffff;
 }
 .head-center {
   position: absolute;
@@ -163,6 +188,7 @@ apparel
 apparel */
 
 .arrow-app {
+  fill: #ffffff;
   -webkit-text-fill-color: #ffffff;
 }
 .arrow-app p {
@@ -186,6 +212,7 @@ graphics
 graphics */
 
 .arrow-graphics {
+  fill: #ffffff;
   -webkit-text-fill-color: #ffffff;
 }
 .arrow-graphics p {
@@ -236,6 +263,7 @@ stories
 stories */
 
 .arrow-stories {
+  fill: #ffffff;
   -webkit-text-fill-color: #ffffff;
 }
 .arrow-stories p {
@@ -251,7 +279,7 @@ stories */
   background: #000000;
 }
 .stories .page-logo h2 {
-  color: #000000;
+  color: #ffffff;
 }
 .head-stories {
   position: absolute;
@@ -319,15 +347,29 @@ nav */
 .list-item a {
   text-decoration: none;
   color: #000000;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 .list-item a:hover {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  transition: linear 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
+.landing,
+.boards,
+.accessories,
+.apparel,
+.graphics,
+.stories,
+.nav {
+  cursor: none;
+}
+
+/* media ports
+media ports
+media ports */
 
 @media screen and (max-width: 1366px) {
   .arrow svg {
@@ -436,5 +478,8 @@ nav */
   .img-graphics img,
   .img-stories img {
     width: 60vw;
+  }
+  .list-item a {
+    font-size: 2.2rem;
   }
 }
